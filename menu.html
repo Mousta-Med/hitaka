@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu</title>
+  <link rel="icon" href="./img/icon.png" />
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet eligendi temporibus laboriosam doloribus ipsam debitis minus! Quisquam, ab nostrum? Ex molestias corporis quo aspernatur magnam harum ipsam porro quidem.." />
+    <link rel="stylesheet" href="./css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!--header--->
+  <header class="home-navbar">
+    <div class="new-home-navbar">
+      <a href="index.html"><img src="./img/header-icon.svg" alt=""></a>
+
+      <ul class="new-navbar">
+        <i class="bi bi-x close-ico"></i>
+        <li><a class="bug" href="index.html">HOME</a></li>
+        <li><a class="place" class="bug" href="menu.html">CART</a></li>
+        <li><a class="bug" href="about.html">ABOUT</a></li>
+        <li><a class="bug" href="contact.html">CONTACTS</a></li>
+        <button class="cart"><img src="./img/shopping-cart.svg" alt=""></button>
+      </ul>
+      <i class="bi bi-list ico-list"></i>
+    </div>
+    <div class="shopping-cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div class="cart-content">
+        <div class="cart-box">
+          <img src="./img/sushi.png" alt="" class="cart-img">
+          <div class="detail-box">
+            <div class="cart-product-title">SUSHI</div>
+            <div class="cart-price">$25</div>
+            <input type="number" value="1" class="cart-quantity">
+          </div>
+          <i class="bi bi-trash cart-remove"></i>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button type="button" class="btn-buy">Buy Now</button>
+      <i class="bi bi-x-circle" id="close-cart"></i>
+    </div>
+
+  </header>
+
+
+  <!--Home section--->
+
+  <div class="home">
+    <h1>MENU</h1>
+    <p>Traditional Japanese techniques and recipes combined with the <br> freshest ingredients Sonoma's wine country
+      offers</p>
+  </div>
+
+  <!--container--->
+  <div class="menu-container">
+    <div class="filter-list">
+      <ul>
+        <li><button class="place filter" data-lqas=".card">ALL</button></li>
+        <li><button class="filter" data-lqas=".sousi">SUSHI</button></li>
+        <li><button class="filter" data-lqas=".chalada">SALADS</button></li>
+        <li><button class="filter" data-lqas=".souba">SOUP</button></li>
+        <li><button class="filter" data-lqas=".lasir">DRINKS</button></li>
+      </ul>
+    </div>
+    <div class="food-card">
+      <div class="card sousi">
+        <img src="./img/sushi.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card sousi">
+        <img src="./img/sushi.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card sousi">
+        <img src="./img/sushi.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card chalada">
+        <img src="./img/suchi salad .png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card chalada">
+        <img src="./img/suchi salad .png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card chalada">
+        <img src="./img/suchi salad .png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card souba">
+        <img src="./img/sushi-soup.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card souba">
+        <img src="./img/sushi-soup.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card souba">
+        <img src="./img/sushi-soup.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card lasir">
+        <img src="./img/drinks.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card lasir">
+        <img src="./img/drinks.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+      <div class="card lasir">
+        <img src="./img/drinks.png" alt="">
+        <div class="card-info">
+          <h4>NIGIRI MORIAWASE</h4>
+          <button><img src="./img/cart-plus.svg" alt=""></button>
+          <h4>$10.50</h4>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="end-text1">
+      <h1>OPEN 7 DAYS A WEEK</h1>
+      <p>Come join us anytime for an exquisite sake and sushi selection along with a modern <br> influenced, traditional
+        take on Japanese cuisine</p>
+    </div>
+
+
+    <!--footer--->
+    <footer>
+      <div class="footer">
+        <div class="copyright">
+          <p>Copyright ©2022 All rights reserved | Arigato</p>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="./img/footer-icon.svg" alt=""></a>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a href="https://www.facebook.com/YouCodeSchool/"><img src="./img/facbook.png" alt=""></a></li>
+            <li><a href="https://twitter.com/YouCode18"><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href="https://goo.gl/maps/LoesGqp8ypRcUm5q7"><img src="./img/map.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/youcodeschool/"><img src="./img/instagram.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!--link to js--->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
