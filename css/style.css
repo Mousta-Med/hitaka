@@ -138,13 +138,27 @@ body {
   padding-left: 10px;
 }
 .contact1 {
+  justify-content: space-between;
+  width: 26%;
   display: flex;
+  margin-bottom: 20px;
 }
+
 .contact2 {
+  justify-content: space-between;
+  width: 25%;
   display: flex;
+  margin-bottom: 20px;
 }
 .contact3 {
+  justify-content: space-between;
+  width: 25%;
   display: flex;
+  margin-bottom: 20px;
+}
+.contact-area p{
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 .map {
   padding-top: 80px;
@@ -256,17 +270,19 @@ body {
 }
 .shopping-cart {
   position: fixed;
-  top: 0;
-  right: -100%;
+  top: -100%;
+  right: 0;
   width: 360px;
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
   padding: 20px;
   background-color: #fff;
   border: #b71a25 solid 3px;
   transition: 0.3s;
 }
 .shopping-cart.active {
-  right: 0;
+  top: 0;
 }
 .cart-title {
   text-align: center;
@@ -466,6 +482,19 @@ body {
   width: 50%;
   margin-right: 10px;
   margin-top: 30px;
+}
+.menu-exemple h1 {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.menu-exemple p{
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.menu-exemple h3 {
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 .special-card {
   color: #b71a25;
@@ -704,4 +733,18 @@ body {
     font-size: 14px;
     line-height: 16px;
   }
+  .contact1 {
+    width: 30%;
+  }
+  .contact2 {
+    width: 30%;
+  }
+  .contact3 {
+    width: 30%;
+  }
+  .menu-exemple h1 {
+    padding-top: 60px;
+  }
+  
+  
 }
