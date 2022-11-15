@@ -156,7 +156,7 @@ body {
   display: flex;
   margin-bottom: 20px;
 }
-.contact-area p{
+.contact-area p {
   margin-bottom: 20px;
   margin-left: 30px;
 }
@@ -275,11 +275,14 @@ body {
   width: 360px;
   min-height: 100vh;
   max-height: 100vh;
-  overflow: auto;
+  overflow-y: scroll;
   padding: 20px;
   background-color: #fff;
   border: #b71a25 solid 3px;
   transition: 0.3s;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .shopping-cart.active {
   top: 0;
@@ -488,7 +491,7 @@ body {
   margin-left: 50px;
   margin-bottom: 40px;
 }
-.menu-exemple p{
+.menu-exemple p {
   margin-left: 50px;
   margin-bottom: 40px;
 }
@@ -745,6 +748,4 @@ body {
   .menu-exemple h1 {
     padding-top: 60px;
   }
-  
-  
 }

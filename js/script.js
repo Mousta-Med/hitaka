@@ -6,7 +6,6 @@ const closeMenu = document.querySelector(".close-ico");
 openMenu.onclick = () => {
   navBar.classList.add("active");
 };
-
 closeMenu.onclick = () => {
   navBar.classList.remove("active");
 };
@@ -20,7 +19,7 @@ filters.forEach((filter) => {
   filter.addEventListener("click", switchFood);
 });
 
-function switchClass() {
+function switchClass() { 
   filters.forEach((filter) => {
     filter.classList.remove("place");
     this.classList.add("place");
