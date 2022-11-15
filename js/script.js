@@ -19,7 +19,7 @@ filters.forEach((filter) => {
   filter.addEventListener("click", switchFood);
 });
 
-function switchClass() { 
+function switchClass() {
   filters.forEach((filter) => {
     filter.classList.remove("place");
     this.classList.add("place");
@@ -146,6 +146,5 @@ function updatetotale() {
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }
-  total = Math.round(total * 100) / 100;
   document.getElementsByClassName("total-price")[0].innerText = "$" + total;
 }
