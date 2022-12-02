@@ -46,7 +46,6 @@ openCart.onclick = () => {
 closeCart.onclick = () => {
   cart.classList.remove("active");
 };
-// cart working
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -75,9 +74,8 @@ function ready() {
 function buyButtonClicked() {
   alert("Your Order is Placed");
   var cartContent = document.getElementsByClassName("cart-content")[0];
-  while (cartContent.hasChildNodes()) {
-    cartContent.removeChild(cartContent.firstChild);
-  }
+
+  location.reload();
   updatetotale();
 }
 
@@ -93,7 +91,6 @@ function quantiyChanged(event) {
   }
   updatetotale();
 }
-//add to cart
 function addCartClicked(event) {
   var button = event.target;
   var shopProducts = button.parentElement.parentElement;
@@ -132,8 +129,6 @@ function addProductToCart(title, price, productImg) {
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantiyChanged);
 }
-//update total
-
 function updatetotale() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
   var cartBoxes = cartContent.getElementsByClassName("cart-box");

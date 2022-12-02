@@ -11,8 +11,6 @@ body {
   overflow-x: hidden;
 }
 .home-navbar {
-  /* position: sticky;
-  top: 0px; */
   background-color: #fff;
   height: 166px;
   width: 100%;
@@ -245,6 +243,7 @@ body {
 
 .food-card {
   display: grid;
+  /* ayoub */
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   gap: 25px;
   width: 90%;
